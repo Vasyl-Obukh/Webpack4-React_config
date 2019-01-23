@@ -4,7 +4,12 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Yarn generated files
 yarn.lock
+
+# Builded project directory
+dir/
 
 # Runtime data
 pids
