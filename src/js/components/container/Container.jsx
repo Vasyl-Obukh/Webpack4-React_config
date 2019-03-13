@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import PresComponent from "../presentational/PresComponent.jsx";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import PresComponent from '../presentational/PresComponent.jsx';
 class Container extends Component {
   constructor() {
     super();
@@ -16,5 +16,5 @@ class Container extends Component {
 }
 export default Container;
 
-const wrapper = document.getElementById("root");
+const wrapper = document.getElementById('root');
 wrapper ? ReactDOM.render(<Container />, wrapper) : false;

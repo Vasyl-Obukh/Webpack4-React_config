@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import '../../../sass/style.sass'
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../../../sass/style.sass';
 
 const PresComponent = ({ value }) => (
   <h1>{value}</h1>
