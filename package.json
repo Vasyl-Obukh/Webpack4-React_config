@@ -1,6 +1,6 @@
 {
-  "name": "y",
-  "version": "1.0.0",
+  "name": "fe11-project",
+  "version": "0.9.0",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
@@ -10,20 +10,22 @@
   "author": "Vasyl Obukh",
   "license": "MIT",
   "browserslist": [
-    "last 2 versions",
+    "last 5 versions",
     "ios >= 8"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.4.2",
+    "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^2.0.1",
+    "deep-freeze": "^0.0.1",
     "eslint": "^5.15.1",
     "eslint-plugin-react": "^7.12.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -37,16 +39,18 @@
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-redux": "^6.0.1",
-    "react-router-dom": "^4.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "svg-url-loader": "^2.3.2",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "url-search-params-polyfill": "^5.1.0",
+    "uuid": "^3.3.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
   }
 }
