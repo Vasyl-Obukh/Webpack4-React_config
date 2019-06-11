@@ -8,15 +8,19 @@ const ExtractTextPlugin  = require("extract-text-webpack-plugin");
 
 let conf = {
   entry: {
-    index: path.join(__dirname, "src", "index.js")
+    index: path.join(__dirname, "src", "index.tsx")
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "index.js",
     publicPath: "dist"
   },
+  devtool: "source-map",
   devServer: {
     overlay: true
+  },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".json"]
   },
   module: {
     rules: [
@@ -25,8 +29,10 @@ let conf = {
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader"
       },
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
       {
-        test: /\.(c|sa)ss$/,
+        test: /\.(c|sa|sc)ss$/,
         use: ExtractTextPlugin.extract({
           use: ["css-loader", "postcss-loader", "sass-loader"]
         })
@@ -60,6 +66,10 @@ let conf = {
       }
     ]
   },
+  // externals: {
+  //   "react": "React",
+  //   "react-dom": "ReactDOM"
+  // },
   plugins: [
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
