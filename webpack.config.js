@@ -26,7 +26,7 @@ let conf = {
         loader: "babel-loader"
       },
       {
-        test: /\.(c|sa)ss$/,
+        test: /\.(c|sa|sc)ss$/,
         use: ExtractTextPlugin.extract({
           use: ["css-loader", "postcss-loader", "sass-loader"]
         })
